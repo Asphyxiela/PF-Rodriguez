@@ -372,6 +372,8 @@ footer h5{
          padding: 0;
      }
 
+     /* para agregar grid debes colocar primero el display, luego si lo quieres en columnas o rows (o inclusive uno sólo) y posterior darle valores. En este caso el 3 es para "3 columnas" y el 1FR es para que se repita la misma unidad para las imagenes que trabajaré. Luego agrego un gap entre las imagenes. OJO, debes remover los margin y padding pre existentes en las clases hijos y a su vez cualquier float que posea. */
+     
      main.imagenesAlgunosClientes{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
