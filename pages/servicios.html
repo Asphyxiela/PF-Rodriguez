@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
     <title>Servicios: designL</title>
 </head>
@@ -11,16 +13,24 @@
     <header class="headerInicio">
         <a href="../index.html"><h1> designL </h1> </a>
         <img src="../img/loginnegro.png" alt=" Icono de LOG " class="iconoLog">
-        <nav>
-            <ul>
-                <li> <a href="../index.html"> Inicio </a> </li>
-                <li> <a href="../pages/servicios.html"> Servicios </a> </li>
-                <li> <a href="../pages/nosotros.html"> Nosotros </a> </li>
-                <li> <a href="../pages/algunos-clientes.html"> Proyectos </a> </li>
-                <li> <a href="../pages/contactanos.html"> Contactanos </a> </li>
-            </ul>
-        </nav>
-        <img src="../img/menu.png" alt=" menú mobile " class="botonMenuMobile">
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="../index.html"> Inicio </a>
+                  <a class="nav-link" href="../pages/servicios.html"> Servicios </a>
+                  <a class="nav-link" href="../pages/nosotros.html"> Nosotros </a>
+                  <a class="nav-link" href="../pages/algunos-clientes.html"> Proyectos </a>
+                  <a class="nav-link" href="../pages/contactanos.html"> Contactanos </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+
     </header>
     <main class="mainServicios">
         <h2> Cotiza con nosotros el servicio de instalación de Luces LED para tus espacios deseados </h2>
@@ -45,5 +55,9 @@
       </div>
         <img src="../img/whatsappnegro.png" alt=" icono Whatsapp contacto " class="imgWhats">
     </footer>
+
+    <!-- JS bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
 </body>
 </html>

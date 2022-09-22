@@ -28,7 +28,7 @@ body
 }
 
 a:visited{
-    color: transparent
+    color: transparent;
 }
 
 a{
@@ -88,7 +88,7 @@ h1{
     list-style: none;
 }
 
-.headerInicio nav ul li{
+.headerInicio div a{
     list-style: none;
     background-color: #F9F9F9;
     padding: 0.6rem;
@@ -142,6 +142,7 @@ main .textoCentral{
 
 .imagenPrincipal:hover{
     transform: scale(1.1);
+    padding: 5px;
 }
 
 main.imagenesAlgunosClientes{
@@ -236,6 +237,7 @@ main.imagenesAlgunosClientes{
 .sectionNosotros div p{
     text-align: center;
     font-size: 1.2rem;
+
 }
 
 .mainServicios{
@@ -340,6 +342,7 @@ footer{
 
 footer h5{
    margin-right: 0.5rem;
+   font-size: 0.83rem;
 }
 
 
