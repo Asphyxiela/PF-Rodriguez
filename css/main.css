@@ -1,6 +1,6 @@
 /* para poder ocupar un font determinado debes irte a google fonts. Seleccionar el font junto con los grosores distintos. 200-500-700, etc. >import > copiar desde el @ y pegar como se hizo aca. Luego copiar el font-family y pegarlo en body aca en css */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
 
 /* para revisar las dimensiones de mis elementos. Me sirve además para saber como se encuentran separados los elementos y saber si estan bien espaciados entre si 
 
@@ -24,7 +24,7 @@ body
     flex-direction: column;
     height: 100vh;
     margin-top: auto;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 a:visited{
@@ -39,7 +39,6 @@ h1{
     margin: 20px;
     text-align: center;
     padding: 20px;
-
 }
 
 /* css va hacia abajo en "cascada". Siempre aplicará la última etiqueta aplicada, ejemplo. Si aplico 2 h1 siempre tomará el de abajo. Salvo que el primero tenga import! */
@@ -78,9 +77,6 @@ h1{
     padding: 10px;
 }
 
-.headerInicio nav{
-    display: none;
-}
 
 .headerInicio nav ul{
     display: flex;
@@ -88,7 +84,7 @@ h1{
     list-style: none;
 }
 
-.headerInicio div a{
+.headerInicio nav div a{
     list-style: none;
     background-color: #F9F9F9;
     padding: 0.6rem;
@@ -111,37 +107,27 @@ h1{
     color: black;
 }
 
-main .textoCentral{
-    display: flex;
-    flex-direction: column;
+main .textoCentral p{
     list-style: none;
-    gap: 3rem;
-    padding: 0 20px;
-}
-
-
-
-.loremMain p{
-    margin: 20px;
     padding: 30px;
+    margin-top: 50px;
     list-style: none;
     font-size: 1.5rem;
     text-align: center;
 }
 
-.loremMain li{
-    list-style: none;
-}
+
 
 
 .imagenPrincipal{
-    margin: 70px auto 0 auto;
     width: 100%;
-    border-radius: 30px;
+    border-radius: 40px;
+    margin-top: 30px;
+    padding: 30px;
 }
 
 .imagenPrincipal:hover{
-    transform: scale(1.1);
+    transform: scale(1.0);
     padding: 5px;
 }
 
@@ -216,17 +202,16 @@ main.imagenesAlgunosClientes{
 }
 
 .sectionNosotros div{
-    display: flex;
-    flex-direction: column;
     align-items: center;
     width: 100%;
 
 }
 
-.sectionNosotros div h3{
+.sectionNosotros div h5{
     text-align: center;
     height: 30px;
     padding-top: 30px;
+    font-weight: bold;
 }
 
 .sectionNosotros div img{
@@ -236,8 +221,8 @@ main.imagenesAlgunosClientes{
 
 .sectionNosotros div p{
     text-align: center;
-    font-size: 1.2rem;
-
+    font-size: 1rem;
+    margin-top: 4.5rem;
 }
 
 .mainServicios{
@@ -254,6 +239,7 @@ main.imagenesAlgunosClientes{
     margin: 20px;
     text-align: center;
     font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .mainServicios div p{
@@ -343,6 +329,7 @@ footer{
 footer h5{
    margin-right: 0.5rem;
    font-size: 0.83rem;
+   font-weight: bold;
 }
 
 
@@ -355,11 +342,7 @@ footer h5{
     }
 
     .textoCentral{
-        padding: 0;
-    }
-
-    .headerInicio nav{
-        display: block;
+        padding: 2rem;
     }
 
     .imagenesAlgunosClientes img{
