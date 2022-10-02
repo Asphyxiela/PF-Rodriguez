@@ -194,8 +194,8 @@ main.redess {
       transform: scale(1.1); }
 
 .sectionContacto {
-  margin: 100px;
-  padding: 0 450px; }
+  margin: 50px;
+  padding: 50px; }
   .sectionContacto + .h4Contactanos {
     text-align: center;
     margin-top: 20px; }
@@ -272,4 +272,7 @@ main.redess {
   main.mainServicios .sectionServicios img {
     width: 7%; }
   .mainServicios div p {
-    font-size: 1.3rem; } }
+    font-size: 1.3rem; }
+  .sectionContacto {
+    margin: 100px;
+    padding: 0 450px; } }
