@@ -1,0 +1,21 @@
+/* para revisar las dimensiones de mis elementos. Me sirve además para saber como se encuentran separados los elementos y saber si estan bien espaciados entre si 
+
+* {
+    outline: 1px solid red
+    }
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+
+&:visited{
+    color: transparent;
+    }
+}
