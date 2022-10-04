@@ -1,7 +1,7 @@
 {
   "name": "proyecto-personal-coder",
   "version": "1.0.0",
-  "description": "",
+  "description": "designL, es una empresa creada a partir de la necesidad de instalar y/o mejorar los espacios donde pasamos mayor tiempo con luces y tonalidades de las mismas que hagan mas placentero el estar en ellos.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
