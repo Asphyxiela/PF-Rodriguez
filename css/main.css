@@ -1,13 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
-body {
-  background-color: #F9F9F9;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin-top: auto;
-  font-family: 'Roboto', sans-serif !important; }
-
 /* para revisar las dimensiones de mis elementos. Me sirve además para saber como se encuentran separados los elementos y saber si estan bien espaciados entre si 
 
 * {
@@ -24,6 +16,14 @@ a {
   text-decoration: none; }
   a:visited {
     color: transparent; }
+
+body {
+  background-color: #F9F9F9;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-top: auto;
+  font-family: 'Roboto', sans-serif !important; }
 
 header h1 {
   margin: 20px;
@@ -57,30 +57,6 @@ header nav a {
   font-size: large;
   color: black !important;
   font-weight: bold !important; }
-
-footer {
-  align-items: center;
-  background-color: #A6E3E9;
-  padding: 10px;
-  margin-top: auto; }
-  footer .copyright {
-    margin-left: 5px;
-    padding: 20px 0; }
-  footer .imgDDA {
-    width: 20px;
-    height: 20px; }
-  footer .imgWhats {
-    width: 4rem;
-    height: 4rem;
-    position: fixed;
-    right: 0;
-    bottom: 0; }
-    footer .imgWhats:hover {
-      transform: scale(1.1); }
-  footer h5 {
-    margin-right: 0.5rem;
-    font-size: 0.83rem;
-    font-weight: bold; }
 
 main .textoCentral {
   display: flex; }
@@ -171,6 +147,22 @@ main.redess {
   .sectionContacto label {
     font-weight: bold; }
 
+footer {
+  align-items: center;
+  background-color: #A6E3E9;
+  padding: 10px;
+  margin-top: auto; }
+  footer .copyright {
+    margin-left: 5px;
+    padding: 20px 0; }
+  footer .imgDDA {
+    width: 20px;
+    height: 20px; }
+  footer h5 {
+    margin-right: 0.5rem;
+    font-size: 0.83rem;
+    font-weight: bold; }
+
 @media screen and (min-width: 768px) {
   .imagenPrincipal {
     width: 700px;
@@ -224,7 +216,7 @@ main .textoCentral p, main.mainServicios .sectionServicios p {
   text-align: center;
   padding: 30px; }
 
-footer, main.redess {
+main.redess, footer {
   display: flex;
   justify-content: center; }
 

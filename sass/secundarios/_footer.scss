@@ -12,19 +12,10 @@ footer{
     .imgDDA{
         @include sizes(20px, 20px);
     }
-    .imgWhats{
-        @include sizes(4rem, 4rem);
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        &:hover{
-            transform: scale(1.1);
-        }
-    }
     h5{
         margin-right: 0.5rem;
         font-size: 0.83rem;
         font-weight: bold;
     }
-    
 }
+    
