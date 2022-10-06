@@ -1,0 +1,15 @@
+
+@mixin sizes($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin margin-padding($margin, $padding){
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin grid-algunos($col, $gap){
+    grid-template-columns: repeat($col, 1fr);
+    gap: $gap;
+}

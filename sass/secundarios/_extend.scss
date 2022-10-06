@@ -1,0 +1,33 @@
+%flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    }
+
+%flex-items {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+%text-padding {
+    text-align: center;
+    padding: 30px;
+}
+
+%flex-content {
+    display: flex;
+    justify-content: center;
+}
+
+%flex-align-items {
+    display: flex;
+    align-items: center;
+}
+
+%text-bold {
+    text-align: center;
+    font-weight: bold;
+}

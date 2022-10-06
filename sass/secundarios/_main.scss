@@ -2,12 +2,10 @@ main{
     .textoCentral{
         display: flex;
         p{
+            @extend %text-padding;
             list-style: none;
-            padding: 30px;
             margin-top: 50px;
-            list-style: none;
             font-size: 1.5rem;
-            text-align: center;
             }
             .imagenPrincipal{
                 width: 100%;
@@ -23,21 +21,16 @@ main{
     &.mainServicios{
         margin: 20px;
         h2{
+            @extend %text-bold;
             margin: 20px;
-            text-align: center;
             font-size: 1.1rem;
-            font-weight: bold;
         }
         .sectionServicios{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
+            @extend %flex;
             p{
+                @extend %text-padding;
                 margin-top: 7px;
-                padding: 30px;
                 font-size: 1rem;
-                text-align: center;
             }
             img{
                 width: 20%;
@@ -47,10 +40,7 @@ main{
                 animation-iteration-count: infinite;
             }
             .itemSectionContent{
-                display: flex;
-                flex-direction: column;
-                align-items: center; 
-                justify-content: center;
+                @extend %flex-items;
             }
         }
     }
@@ -62,20 +52,15 @@ main{
             text-align: center;
         }
         .sectionNosotros{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @extend %flex-items;
             padding: 3rem;
             margin: 3rem;
             img{
-                width: 100px;
-                height: 100px;}
+                @include sizes(100px, 100px)}
             h5{
-                text-align: center;
+                @extend %text-bold;
                 height: 30px;
-                padding-top: 30px;
-                font-weight: bold;}
+                padding-top: 30px;}
             p{
                 margin: 30px;
                 padding: 30px 0;
@@ -92,8 +77,7 @@ main{
     }
     &.imagenesAlgunosClientes{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
+        @include grid-algunos(1, 10px);
         margin-top: 10px;
         padding: 0 20px;}
         img{
@@ -103,13 +87,12 @@ main{
             &:first-child{
                 padding-top: 20px;
     }
+    
     &.redess{
-        display: flex;
-        justify-content: center;
+        @extend %flex-content;
         padding: 10px;
         img{
-            width: 3rem;
-            height: 3rem;
+            @include sizes(3rem, 3rem);
             margin: 0.5rem;
             border-radius: 0;
             &:hover{
@@ -119,8 +102,7 @@ main{
     }
 }
 .sectionContacto{
-    margin: 50px;
-    padding: 50px;
+    @include margin-padding(50px, 50px);
     & + .h4Contactanos{
         text-align: center;
         margin-top: 20px;

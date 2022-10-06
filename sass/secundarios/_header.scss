@@ -1,14 +1,12 @@
 header{
     h1{
-        margin: 20px;
-    text-align: center;
-    padding: 20px;
+        @include margin-padding(20px, 20px);
+        text-align: center;
     }
     &.headerInicio{
-        background-color: #A6E3E9;
-        display: flex;
+        @extend %flex-align-items;
+        background-color: $color-header-footer;
         justify-content: space-evenly;
-        align-items: center;
         padding: 10px;
     }
         nav{
