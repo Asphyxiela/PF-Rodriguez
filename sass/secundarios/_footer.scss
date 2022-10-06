@@ -12,9 +12,10 @@ footer{
     .imgDDA{
         @include sizes(20px, 20px);
     }
-    h5{
+    p{
+        margin-top: 0.7rem;
         margin-right: 0.5rem;
-        font-size: 0.83rem;
+        font-size: 0.85rem;
         font-weight: bold;
     }
 }

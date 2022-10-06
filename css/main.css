@@ -158,9 +158,10 @@ footer {
   footer .imgDDA {
     width: 20px;
     height: 20px; }
-  footer h5 {
+  footer p {
+    margin-top: 0.7rem;
     margin-right: 0.5rem;
-    font-size: 0.83rem;
+    font-size: 0.85rem;
     font-weight: bold; }
 
 @media screen and (min-width: 768px) {
