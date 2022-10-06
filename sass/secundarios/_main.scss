@@ -10,19 +10,19 @@ main{
             .imagenPrincipal{
                 width: 100%;
                 border-radius: 40px;
-                margin-top: 30px;
-                padding: 30px;
+                margin-top: $espaciado-triple;
+                padding: $espaciado-triple;
                 &:hover{
                     transform: scale(1.0);
-                    padding: 5px;
+                    padding: $espaciado-mediopx;
                 }
             }
     }
     &.mainServicios{
-        margin: 20px;
+        margin: $espaciado-doble;
         h2{
             @extend %text-bold;
-            margin: 20px;
+            margin: $espaciado-doble;
             font-size: 1.1rem;
         }
         .sectionServicios{
@@ -30,11 +30,11 @@ main{
             p{
                 @extend %text-padding;
                 margin-top: 7px;
-                font-size: 1rem;
+                font-size: $espaciado-1rem;
             }
             img{
                 width: 20%;
-                margin-top: 2rem;
+                margin-top: $espaciado-2rem;
                 animation-name: servicios;
                 animation-duration: 1s;
                 animation-iteration-count: infinite;
@@ -45,31 +45,31 @@ main{
         }
     }
     &.mainNosotros{
-        margin: 20px;
+        margin: $espaciado-doble;
         h2{
-            margin-top: 20px;
-            padding-bottom: 10px;
+            margin-top: $espaciado-doble;
+            padding-bottom: $espaciado-normal;
             text-align: center;
         }
         .sectionNosotros{
             @extend %flex-items;
-            padding: 3rem;
-            margin: 3rem;
+            padding: $espaciado-3rem;
+            margin: $espaciado-3rem;
             img{
                 @include sizes(100px, 100px)}
             h5{
                 @extend %text-bold;
-                height: 30px;
-                padding-top: 30px;}
+                height: $espaciado-triple;
+                padding-top: $espaciado-triple;}
             p{
-                margin: 30px;
+                margin: $espaciado-triple;
                 padding: 30px 0;
                 font-size: 25px;
                 text-align: center;
             }
             div p{
                 text-align: center;
-                font-size: 1rem;
+                font-size: $espaciado-1rem;
                 margin-top: 4.5rem;
             }
         }
@@ -78,19 +78,19 @@ main{
     &.imagenesAlgunosClientes{
         display: grid;
         @include grid-algunos(1, 10px);
-        margin-top: 10px;
+        margin-top: $espaciado-normal;
         padding: 0 20px;}
         img{
             width:  100%;
             object-fit: cover;
-            border-radius: 30px;}
+            border-radius: $espaciado-triple;}
             &:first-child{
-                padding-top: 20px;
+                padding-top: $espaciado-doble;
     }
     
     &.redess{
         @extend %flex-content;
-        padding: 10px;
+        padding: $espaciado-normal;
         img{
             @include sizes(3rem, 3rem);
             margin: 0.5rem;
@@ -105,7 +105,7 @@ main{
     @include margin-padding(50px, 50px);
     & + .h4Contactanos{
         text-align: center;
-        margin-top: 20px;
+        margin-top: $espaciado-doble;
     }
     label{
         font-weight: bold;

@@ -7,12 +7,12 @@ header{
         @extend %flex-align-items;
         background-color: $color-header-footer;
         justify-content: space-evenly;
-        padding: 10px;
+        padding: $espaciado-normal;
     }
         nav{
             ul{
         display: flex;
-        column-gap: 5px;
+        column-gap: $espaciado-mediopx;
         list-style: none;
                 li{
                     a{
@@ -27,13 +27,13 @@ header{
 
                 a{
             list-style: none;
-            background-color: #F9F9F9;
+            background-color: $color-fondo;
             padding: 0.6rem;
             border-radius: 4rem;
             box-shadow: 2px 2px 2px;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            margin-right: 1rem;
+            margin-top: $espaciado-1rem;
+            margin-bottom: $espaciado-1rem;
+            margin-right: $espaciado-1rem	;
             font-size: large;
             color: black !important;
             font-weight: bold !important;

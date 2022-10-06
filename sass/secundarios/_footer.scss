@@ -2,11 +2,11 @@ footer{
     @extend %flex-content;
     align-items: center;
     background-color: $color-header-footer;
-    padding: 10px;
+    padding: $espaciado-normal;
     margin-top: auto;
     .copyright{
         @extend %flex-align-items;
-        margin-left: 5px;
+        margin-left: $espaciado-mediopx;
         padding: 20px 0;
     }
     .imgDDA{
