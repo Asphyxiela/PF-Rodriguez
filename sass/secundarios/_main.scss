@@ -57,10 +57,11 @@ main{
             margin: $espaciado-3rem;
             img{
                 @include sizes(100px, 100px)}
-            h5{
+            h3{
                 @extend %text-bold;
                 height: $espaciado-triple;
-                padding-top: $espaciado-triple;}
+                padding-top: $espaciado-triple;
+                font-size: 1.2rem;}
             p{
                 margin: $espaciado-triple;
                 padding: 30px 0;
