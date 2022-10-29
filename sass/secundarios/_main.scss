@@ -46,7 +46,7 @@ main{
     }
     &.mainNosotros{
         margin: $espaciado-doble;
-        h2{
+        h1{
             margin-top: $espaciado-doble;
             padding-bottom: $espaciado-normal;
             text-align: center;
@@ -57,7 +57,7 @@ main{
             margin: $espaciado-3rem;
             img{
                 @include sizes(100px, 100px)}
-            h3{
+            h2{
                 @extend %text-bold;
                 height: $espaciado-triple;
                 padding-top: $espaciado-triple;
