@@ -64,3 +64,19 @@
         padding: 0 450px;
     }
 }
+
+@media screen and (max-width: 1024px){
+    .row-fix{
+        --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            flex-wrap: wrap;
+        }
+    .row-fix>* {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        margin-top: var(--bs-gutter-y);
+    }
+}

@@ -53,8 +53,8 @@ main{
         }
         .sectionNosotros{
             @extend %flex-items;
-            padding: $espaciado-3rem;
-            margin: $espaciado-3rem;
+            padding: $espaciado-1rem;
+            margin: $espaciado-1rem;
             img{
                 @include sizes(100px, 100px)}
             h2{
